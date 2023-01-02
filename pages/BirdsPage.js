@@ -28,7 +28,7 @@ export default function BirdsPage() {
           rotation: [0, x > 0 ? Math.PI : 0, 0],
           speed,
           factor,
-          url: `/glb/flamingo.glb`,
+          url: `/glb/${bird}.glb`,
         }
       }),
     []
@@ -38,7 +38,7 @@ export default function BirdsPage() {
     <Canvas camera={{ position: [0, 0, 35] }}>
       <ambientLight intensity={2} />
       <pointLight position={[40, 40, 40]} />
-      <OrbitControls />
+
       <Suspense fallback={null}>
         {birds.map((props) => (
           <Bird {...props} key={props.key} />
