@@ -1,0 +1,746 @@
+.container {
+    padding: 0;
+  }
+  
+  .main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  padding: 0px 0px;
+  background: rgba(200,200,200,0);
+  width: 100%;
+  }
+  .header p{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    padding: 18px 12px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .headerLinkWrap {
+  display: inline-block;
+  margin: 0 32px;
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all .28s;
+  position: relative;
+  }
+  
+  .headerLink{
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    width: 0px;
+    background: #000;
+    height: 3.2px;
+    transition: all .28s;
+  }
+  
+  .headerLinkWrap:hover .headerLink {
+    width: 100px;
+    transition: all .28s;
+  }
+  
+  .imgwrap {
+    overflow: hidden;
+    width: 100%;
+    height: 112vh;
+    position: relative;
+  }
+  
+  .WDimgwrap {
+    overflow: hidden;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+  }
+  
+  .FVTitle {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    position: absolute;
+    top: 12px;
+    left: 4.8vw;
+    z-index: 12;
+  }
+  .FVTitle span{
+    display: inline-block;
+    width: 24px;
+    height: 8px;
+  }
+  
+  .topimg {
+    width: 100%;
+    height: 120vh;
+  }
+  
+  .abtitle {
+    position: absolute;
+    top: 32vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    width: 40%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+  
+  .spans {
+    position: fixed;
+    text-align: right;
+    font-weight: bold;
+    top: 0px;
+    right: 0;
+    z-index: 10;
+    transition: all .2s;
+    width: 80px;
+    display: block;
+    height: 90px;
+    cursor: pointer;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 18px;
+    color: rgba(60,60,60,1);
+  }
+  
+  .open {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    background: rgba(0,0,0,0.38);
+    color: #fff;
+    transition: all .2s;
+  }
+  
+  .CloseUL {
+    position: fixed;
+    text-align: center;
+    font-weight: bold;
+    top: 0px;
+    right: 0;
+    z-index: 11;
+    transition: all .2s;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    display: block;
+    cursor: pointer;
+    padding-top: 60px;
+    padding-left: 24px;
+    padding-right: 18px;
+    color: rgba(60,60,60,1);
+    list-style: none;
+  }
+  .CloseUL li{
+    padding: 8px 0;
+  }
+  
+  .OpenUL {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    opacity: 1;
+    background: ;
+    color: #fff;
+    transition: all .6s;
+  }
+  
+  .footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+    background: #494846;
+    height: 520px;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .title a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .title a:hover,
+  .title a:focus,
+  .title a:active {
+    text-decoration: underline;
+  }
+  
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+  }
+  
+  .title,
+  .description {
+    text-align: center;
+  }
+  
+  .description {
+    margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+  
+  .code {
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+      Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+  
+  .wdTitle {
+    font-size: 24px;
+    height: 240px;
+    padding-top: 100px;
+    padding-left: 80px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  
+  .wdTitle span{
+    font-size: 10px;
+    padding-left: 28px;
+    display: inline-block;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 4.2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    height: 648px;
+    border: 1px solid #000;
+    border-bottom: 0px solid #000;
+  }
+  .gridInner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    border-bottom: 1px solid #000;
+    height: 648px;
+  }
+  .gridSide {
+    width: 100%;
+    background: #FFCC00;
+    height: 648px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+  .gridSide ul{
+    list-style: none;
+    padding-inline-start: 20px;
+  }
+  .gridSide ul li{
+    list-style: none;
+    padding: 8px 0;
+    color: #474747;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color .24s ease;
+  }
+  .gridSide ul li:hover{
+    color: #fff;
+  }
+  
+  .wdFigure {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 100%;
+    height: 374px;
+    margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+  .wdFigure .wdImg{
+    border: solid #000;
+    border-width: 0px 1px 0px 0px;
+    overflow: hidden;
+  }
+  .wdFigure .wdImg img{
+    width: 100%;
+    opacity: .92;
+    transition: all .2s;
+    object-fit: cover;
+  }
+  .wdFigure .wdImg img:hover{
+    width: 100%;
+    opacity: 1;
+    transition: all .2s;
+    object-fit: cover;
+  }
+  .wdDescription {
+    font-size: 14px;
+    padding: 8px 12px;
+    background-color: #ECEAE2;
+  }
+  .wdDescription p:first-of-type {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    border: solid #000;
+    border-width: 1px 0 1px 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-block-start: 0em;
+      margin-block-end: 0em;
+  }
+  
+  .wdChildgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .wdChildgrid p {
+    background: #999;
+    border: solid #000;
+    border-width: 1px 1px 0px 0px;
+    height: 272px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    overflow: hidden;
+  }
+  .wdChildgrid p:last-child {
+    border: solid #000;
+    border-width: 1px 0px 0px 0px;
+  }
+  
+  
+  .isImgOpen{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    }
+    .wdFigure .isImgClose{
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      }
+  
+    .wdFigure .isImgOpen::after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      animation-name: OpenImgAnime;
+      animation-duration:.5s;
+      animation-fill-mode:forwards;
+      width: 100%;
+      height: 100%;
+      background-color: #FFCC00;
+      }
+    .wdFigure .isImgClose::after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        animation-name: OpenImgAnime2;
+        animation-duration:.5s;
+        animation-fill-mode:forwards;
+        width: 100%;
+        height: 100%;
+        background-color: #666;
+      }
+  
+  .isClose {
+    height: auto;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wdChildgrid p .isOpen{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .wdChildgrid p .isOpen::after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      animation-name: OpenAnime;
+      animation-duration:1s;
+      animation-fill-mode:forwards;
+        width: 100%;
+        height: 100%;
+        background-color: #FFCC00;
+      }
+  
+      .wdChildgrid p .isClose::after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        animation-name: OpenAnime2;
+        animation-duration:1s;
+        animation-fill-mode:forwards;
+          width: 100%;
+          height: 100%;
+          background-color: #666;
+        }
+    
+    @keyframes OpenAnime{
+      0% {
+        transform-origin:left;
+        transform:scaleX(1);
+      }
+      50% {
+        transform-origin:left;
+        transform:scaleX(0);
+      }
+      50.001% {
+        transform-origin:right;
+      }
+      100% {
+        transform-origin:right;
+        transform:scaleX(0);
+      }
+    }
+    @keyframes OpenAnime2{
+      0% {
+        transform-origin:left;
+        transform:scaleX(1);
+      }
+      50% {
+        transform-origin:left;
+        transform:scaleX(0);
+      }
+      50.001% {
+        transform-origin:right;
+      }
+      100% {
+        transform-origin:right;
+        transform:scaleX(0);
+      }
+    }
+    @keyframes OpenImgAnime{
+      0% {
+        transform-origin:top;
+        transform:scaleY(0);
+      }
+      50% {
+        transform-origin:top;
+        transform:scaleY(1);
+      }
+      50.001% {
+        transform-origin:bottom;
+      }
+      100% {
+        transform-origin:bottom;
+        transform:scaleY(0);
+      }
+    }
+      @keyframes OpenImgAnime2{
+        0% {
+          transform-origin:top;
+          transform:scaleY(0);
+        }
+        50% {
+          transform-origin:top;
+          transform:scaleY(1);
+        }
+        50.001% {
+          transform-origin:bottom;
+        }
+        100% {
+          transform-origin:bottom;
+          transform:scaleY(0);
+        }
+    }
+  
+  .wdChildgrid p img{
+    width: 100%;
+    object-fit: cover;
+    opacity: .82;
+    transition: opacity .2s;
+  }
+  .wdChildgrid p img:hover{
+    opacity: 1;
+    transition: opacity .2s;
+  }
+  
+  .gdSection {
+    height: auto;
+    width: 100%;
+    /* background: url(../public/SVG/gdimg.svg); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .grGrid {
+    height: 374px;
+    background: #FFCC00;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.4fr 1.8fr 1fr;
+  }
+  .grGrid .grImg {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #999;
+  }
+  .grGrid .grImg .grImgInner {
+    height: 352px;
+    overflow: hidden;
+  }
+  .grGrid .grDescript {
+    padding: 24px;
+    border-right: 1px solid #999;
+  }
+  .grGrid .grSide ul {
+    list-style: none;
+    padding-top: 20px;
+    margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 20px;
+  }
+  .grGrid .grSide ul li{
+    list-style: none;
+    padding: 8px 0;
+    color: #474747;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color .24s ease;
+  }
+  .grGrid .grSide ul li:hover{
+    color: #fff;
+  }
+  .grGrid div{
+    overflow: hidden;
+    height: 374px;
+  }
+  .grGrid div img{
+    width: 100%;
+    min-height: 374px;
+    max-width: ;
+    opacity: .94;
+    transition: opacity .2s;
+  }
+  .grGrid div img:hover{
+    opacity: 1;
+    transition: opacity .2s;
+  }
+  
+  .prgSection {
+    height: auto;
+    width: 100%;
+    /* background: url(../public/SVG/prgimg.svg); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .prColm {
+    width: 100%;
+    height: 362px;
+    border: 1px solid #000;
+    overflow-y: scroll;
+    padding-left: 80px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .prColm div {
+    height: 100%;
+    min-width: 2400px;
+  }
+  .prColm div p {
+    width: 20vw;
+    max-width: 560px;
+    height: 80%;
+    padding: 8px;
+    display: inline-block;
+    border: 1px solid #000;
+    margin-left: 36px;
+  }
+  
+  .anlgColm {
+    width: 100%;
+    height: 362px;
+    border: 1px solid #000;
+  }
+  
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 300px;
+  }
+  
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+  
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .logo {
+    height: 1em;
+    margin-left: 0.5rem;
+  }
+  
+  .prfWrap {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  }
+  .prfDescript {
+    padding: 0px 100px 20px 20px;
+    letter-spacing: 0.1em;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  
+  
+  .WdData div{
+    margin: 56px 0;
+  }
+  .WdData span{
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 8px;
+    margin-left: 20px;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .WdData figure{
+    width: 100%;
+    max-width: 680px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .WdData figure img{
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      top: 90px;
+    }
+    .header p{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .wdTitle {
+      font-size: 22px;
+    }
+    .grid {
+      width: 100%;
+      grid-template-columns: none;
+      height: 1080px;
+    }
+    .prfWrap {
+      display: grid;
+      grid-template-rows: 1fr 3fr;
+      grid-template-columns: none;
+      width: 100%;
+      }
+    .prfDescript {
+      padding: 0px 20px 20px 20px;
+    }
+    .grGrid {
+      height: auto;
+      grid-template-columns: none;
+    }
+    .grGrid div img{
+      width: 100%;
+      min-height: auto;
+    }
+    .gridSide ul{
+      list-style: none;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      padding-inline-start: 0px;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .card,
+    .footer {
+      border-color: #222;
+    }
+    .code {
+      background: #111;
+    }
+    .logo img {
+      filter: invert(1);
+    }
+  }
+  

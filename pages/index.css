@@ -1,25 +1,29 @@
+
+html,
 body {
-  margin: 0;
+  background: #ECEAE2;
   padding: 0;
-  width: 100%;
-  height: 100vh;
-  background: lavender;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 
 canvas {
   width: 100%;
   height: 100vh;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  color: hotpink;
-}
-
 .main {
-  background: hotpink;
   padding: 50px;
   border-radius: 4px;
   display: flex;
@@ -30,14 +34,3 @@ h1 {
   color: white;
 }
 
-a {
-  color: white;
-  display: block;
-  text-decoration: unset;
-  font-size: 20px;
-  margin: 5px 0;
-}
-
-a:hover {
-  color: #3f51b5;
-}
