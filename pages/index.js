@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React, { useState, useRef, useEffect } from "react"
 import Header from './Header'
 import Profile from './Profile'
+import Birds from './BirdsPage'
 
 import Code from './code.json';
 import styles from '../styles/Home.module.css'
@@ -62,12 +63,9 @@ export default function Home() {
       <main>
       <div className={styles.imgwrap}>
         <Link href="/"><h1 className={styles.FVTitle}>TOSHIYUKI<span></span>KIMURA<span></span>PORTFOLIO</h1></Link>
-        
+        <div style={{ position: 'fixed', zIndex: '2' }}><Birds /></div>
         <Image src="/SVG/topimg.svg" className={styles.topimg} alt="TOP" layout='fill' objectFit='cover' />
       </div>
-
-
-
 
 
       <section className={styles.gdSection} style={{ backgroundSize: '800px' }}>
