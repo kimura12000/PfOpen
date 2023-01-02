@@ -4,6 +4,7 @@ import { useAnimations, useGLTF } from '@react-three/drei'
 
 export default function Bird({ speed, factor, url, ...props }) {
   const { nodes, animations } = useGLTF(url)
+  console.log(nodes);
   const { ref, mixer } = useAnimations(animations)
 
   useEffect(

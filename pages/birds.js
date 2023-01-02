@@ -28,7 +28,7 @@ export default function BirdsPage() {
           rotation: [0, x > 0 ? Math.PI : 0, 0],
           speed,
           factor,
-          url: `/glb/${bird}.glb`,
+          url: `/glb/flamingo.glb`,
         }
       }),
     []

@@ -1,6 +1,8 @@
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import Box from '../components/Box'
+import React, { lazy } from "react"
+const ModelComponent = lazy(() => import("../components/Model2"));
 
 export default function BoxesPage() {
   return (
@@ -13,6 +15,7 @@ export default function BoxesPage() {
         <Box position={[-10, 0, 0]} />
         <Box position={[0, 10, 0]} />
         <Box position={[0, -10, 0]} />
+        <ModelComponent />
         <OrbitControls />
       </Canvas>
     </>
