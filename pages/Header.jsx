@@ -33,11 +33,22 @@ export default function Header() {
 
     }
 
+    const gsapListChildAnimation = () => {
+        gsap.fromTo('.lists',
+            { x: 200 }, //fromの設定
+            {  //toの設定
+                x: 0,
+                stagger: 0.06,
+            });
+
+    }
+
 
 
     const [openMenu, setOpenMenu] = useState(false);
     const Clicker = () => {
         setOpenMenu(!openMenu);
+        gsapListChildAnimation();
     };
     return (
         <header className={styles.header}>
@@ -50,11 +61,11 @@ export default function Header() {
             </p>
             <span onClick={() => Clicker()} className={`${styles.spans} ${openMenu ? styles.open : undefined}`}>＋
                 <ul className={`${styles.CloseUL} ${openMenu ? styles.OpenUL : undefined}`}>
-                    <Link href="/webdesign"><li>WebWorks</li></Link>
-                    <li>GraphicWorks</li>
-                    <li>Programing</li>
-                    <li>Analog</li>
-                    <Link href="/"><li>Top</li></Link>
+                    <Link href="/webdesign"><li className= {`lists ${openMenu ? styles.opacity1 : styles.opacity0 }`}>WebWorks</li></Link>
+                    <li className= {`lists ${openMenu ? styles.opacity1 : styles.opacity0 }`}>GraphicWorks</li>
+                    <li className= {`lists ${openMenu ? styles.opacity1 : styles.opacity0 }`}>Programing</li>
+                    <li className= {`lists ${openMenu ? styles.opacity1 : styles.opacity0 }`}>Analog</li>
+                    <Link href="/"><li  className= {`lists ${openMenu ? styles.opacity1 : styles.opacity0 }`}>Top</li></Link>
                 </ul>
             </span>
         </header>

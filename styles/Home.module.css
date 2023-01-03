@@ -151,7 +151,9 @@
     list-style: none;
   }
   .CloseUL li{
-    padding: 8px 0;
+    padding: 16px 0;
+    opacity: 0;
+    transition: .2s ease;
   }
   
   .OpenUL {
@@ -163,6 +165,14 @@
     color: #fff;
     transition: all .6s;
   }
+  .OpenUL li{
+    padding: 16px 0;
+    opacity: 1;
+    transition: .2s ease;
+  }
+
+  .opacity1 {opacity: 1;}
+  .opacity0 {opacity: 0;}
   
   .footer {
     display: flex;
