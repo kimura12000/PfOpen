@@ -10,6 +10,9 @@ import Boxes from './Boxespage'
 import Code from './code.json';
 import styles from '../styles/Home.module.css'
 
+import { gsap } from "gsap";
+
+
 
 
 
@@ -44,12 +47,9 @@ export default function Home() {
 
   const div = useRef();
 
+  const gsapEl = useRef();
+
   
-
-
-  
-
-
 
   return (
     <div>
