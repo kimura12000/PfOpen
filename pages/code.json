@@ -51,20 +51,20 @@
             "descript": "UI・UX Design/Coding"
         },
         {
+            "display": "PrimeChinese Brandsite",
+            "image": "images/smPrice.jpg",
+            "path": "/webdesign#smPrice",
+            "id": "smPrice",
+            "year": "2023",
+            "descript": "Direction/Design/Coding"
+        },
+        {
             "display": "ソーラーメイト Brandsite",
             "image": "images/solarmate.jpg",
             "path": "/webdesign#solarmate",
             "id": "solarmate",
             "year": "2022",
             "descript": "Design/Coding"
-        },
-        {
-            "display": "ソーラーメイトみらいプラン",
-            "image": "images/smPrice.jpg",
-            "path": "/webdesign#smPrice",
-            "id": "smPrice",
-            "year": "2022",
-            "descript": "Direction/Design/Coding"
         },
         {
             "display": "Q.ENESTでんき 節電キャンペーンLP",

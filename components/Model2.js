@@ -20,8 +20,8 @@ const Model2 = () => {
         // group.current.scale.z = props.props.z
     });
     return (
-      <primitive object={nodes.scene} ref={group} scale={[1, 1, 1]}
-      position={[4, -2, -4.5]}
+      <primitive object={nodes.scene} ref={group} scale={[0.6, 0.6, 0.6]}
+      position={[16, -10, -4.5]}
       rotation={[0.1, -0.4, 0]}/>
     )
   }
