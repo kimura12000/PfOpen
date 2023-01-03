@@ -126,7 +126,7 @@
     "gd":[
         {
             "display": "Wateras illumination",
-            "image": "images/sshot_01.jpeg",
+            "image": "images/wateras.jpg",
             "path": "/webdesign#qenest",
             "id": "qenest",
             "year": "2017",
@@ -137,7 +137,7 @@
         },
         {
             "display": "SolarMate CharactorDesign",
-            "image": "images/sshot_01.jpeg",
+            "image": "images/sorakame.png",
             "path": "/webdesign#qenest",
             "id": "qenest",
             "year": "2022",
@@ -148,7 +148,7 @@
         },
         {
             "display": "SolarMate Blender3Dmodeling",
-            "image": "images/sshot_01.jpeg",
+            "image": "images/smhouse.jpg",
             "path": "/webdesign#qenest",
             "id": "qenest",
             "year": "2022",
@@ -159,7 +159,7 @@
         },
         {
             "display": "NetChina LogoDesign",
-            "image": "images/sshot_01.jpeg",
+            "image": "images/netchinalogo.jpg",
             "path": "/webdesign#qenest",
             "id": "qenest",
             "year": "2022",

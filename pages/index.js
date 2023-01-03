@@ -150,7 +150,7 @@ export default function Home() {
               <h3 className={styles.wdTitle}>GRAPHIC WORKS<span>ロゴ/キャラクターetc</span></h3>
             </div>
             <div ref={div} className={styles.grGrid} >
-              <div className={styles.grImg}><div className={styles.grImgInner}><img src="images/wateras.jpg" alt="" className={styles.GRimg} /></div></div>
+              <div className={styles.grImg}><div className={styles.grImgInner}><img src={Code.gd[switchGd].image} alt="" className={styles.GRimg} /></div></div>
               <div className={styles.grDescript}>{Code.gd[switchGd].display}</div>
               <div className={styles.grSide}>
                 <ul>
