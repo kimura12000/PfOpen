@@ -168,8 +168,7 @@ export default function Home() {
 
       <div className={styles.footer} style={{ background: '#ECEAE2'}}>
       <div className="main">
-      <Link href="/birds">Birds Example</Link>
-      <Link href="/boxes">Boxes Example</Link>
+
     </div>
       </div>
       </main>
