@@ -59,6 +59,11 @@ export default function Home() {
 
   }, [])
 
+  useEffect(() => {
+    setAnimation2()
+
+  }, [gsapEl2])
+
   const setAnimation = () => {
 
     const custom_bird = gsap.timeline({
@@ -68,60 +73,64 @@ export default function Home() {
         start: "top center"
       }
     });
-    
+
     custom_bird.fromTo(gsapEl.current,
       { opacity: 0, }, //fromの設定 //アニメーションする要素
-      { keyframes: [
-        { duration: 16.8, opacity: 1}, //このアニメーションが終わったら下のアニメーションが起こる
-        { duration: 1, opacity: 0 } 
-      ]},
-
-    );
-
-
-    gsap.fromTo(gsapEl2.current,
-      { opacity: 0, y: 140 }, //fromの設定
-      {  //toの設定
-        opacity: 1,
-        y: 0,
-        duration: 1.6,
-      });
-
-
-    const custom_PC = gsap.timeline({toggleActions: 'play none reverse reverse', //デフォルトの指定
-    scrollTrigger: {
-      trigger: ".wrapper0", //アニメーションが始まるトリガーとなる要素
-      start: "top center"
-    }});
-    
-    custom_PC.to(gsapEl2.current,
-      { keyframes: [
-        { duration: 2.8, opacity: 0, y: 200}, //このアニメーションが終わったら下のアニメーションが起こる
-      ]}
+      {
+        keyframes: [
+          { duration: 16.8, opacity: 1 }, //このアニメーションが終わったら下のアニメーションが起こる
+          { duration: 1, opacity: 0 }
+        ]
+      },
 
     );
 
 
 
+    const custom_anime = gsap.timeline({
+      toggleActions: 'play none reset reset', //デフォルトの指定
+      scrollTrigger: {
+        trigger: ".wrapper4", //アニメーションが始まるトリガーとなる要素
+        start: "top center"
+      }
+    });
+
+    custom_anime.fromTo(gsapEl3.current,
+      { opacity: 0, }, //fromの設定 //アニメーションする要素
+      {
+        keyframes: [
+          { duration: 8.2, opacity: 1 }, //このアニメーションが終わったら下のアニメーションが起こる
+          { duration: 1, opacity: 0 }
+        ]
+      },
+
+    );
+
+  }
+
+  const setAnimation2 = () => {
+
+  gsap.fromTo(gsapEl2.current,
+    { opacity: 0, y: 140 }, //fromの設定
+    {  //toの設定
+      opacity: 1,
+      y: 0,
+      duration: 1.6,
+    });
 
 
-      const custom_anime = gsap.timeline({
-        toggleActions: 'play none reset reset', //デフォルトの指定
-        scrollTrigger: {
-          trigger: ".wrapper4", //アニメーションが始まるトリガーとなる要素
-          start: "top center"
-        }
-      });
-      
-      custom_anime.fromTo(gsapEl3.current,
-        { opacity: 0, }, //fromの設定 //アニメーションする要素
-        { keyframes: [
-          { duration: 8.2, opacity: 1}, //このアニメーションが終わったら下のアニメーションが起こる
-          { duration: 1, opacity: 0 } 
-        ]},
+  const custom_PC = gsap.timeline({toggleActions: 'play none reverse reverse', //デフォルトの指定
+  scrollTrigger: {
+    trigger: ".wrapper0", //アニメーションが始まるトリガーとなる要素
+    start: "top center"
+  }});
+  
+  custom_PC.to(gsapEl2.current,
+    { keyframes: [
+      { duration: 2.8, opacity: 0, y: 200}, //このアニメーションが終わったら下のアニメーションが起こる
+    ]}
 
-      );
-        
+  );
 
   }
 
@@ -142,8 +151,8 @@ export default function Home() {
             <Link href="/"><h1 className={styles.FVTitle}>TOSHIYUKI<span></span>KIMURA<span></span>PORTFOLIO</h1></Link>
             <div ref={gsapEl} style={{ position: 'fixed', zIndex: '2', width: '100%' }}><Birds /></div>
             <div ref={gsapEl2} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Boxes /></div>
-            <div ref={gsapEl3} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Texts /></div>  
-            <Image src="/SVG/topimg.svg" className={styles.topimg} alt="TOP" layout='fill' objectFit='cover' />     
+            <div ref={gsapEl3} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Texts /></div>
+            <Image src="/SVG/topimg.svg" className={styles.topimg} alt="TOP" layout='fill' objectFit='cover' />
           </div>
 
           <div className="wrapper0"></div>
