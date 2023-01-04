@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Profile () {
     return (
-      <section className={styles.prgSection}>
+      <section id='prf' className={styles.prgSection}>
 <div className={styles.prfWrap}>
       <h3 className={styles.wdTitle} style={{paddingTop: '160px' ,textAlign: 'left'}}>TECH <span style={{fontSize: '18px', paddingLeft: '0px'}}>＆</span> LIFE</h3>
       <div>

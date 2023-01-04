@@ -54,10 +54,10 @@ export default function Header() {
         <header className={styles.header}>
             <p ref={gsapEl}>
                 <Link href="/webdesign"><span className={`spans ${styles.headerLinkWrap}`}>WEB WORKS<span className={styles.headerLink}></span></span></Link>
-                <Link href="/"><span className={`spans ${styles.headerLinkWrap}`}>GRAPHIC WORKS<span className={styles.headerLink}></span></span></Link>
-                <span  className={`spans ${styles.headerLinkWrap}`}>PROGRAMINIG<span className={styles.headerLink}></span></span>
-                <span  className={`spans ${styles.headerLinkWrap}`}>ANALOG<span className={styles.headerLink}></span></span>
-                <span  className={`spans ${styles.headerLinkWrap}`}>CONTACT<span className={styles.headerLink}></span></span>
+                <Link href="/#gd"><span className={`spans ${styles.headerLinkWrap}`}>GRAPHIC WORKS<span className={styles.headerLink}></span></span></Link>
+                <Link href="/#prg"><span  className={`spans ${styles.headerLinkWrap}`}>PROGRAMINIG<span className={styles.headerLink}></span></span></Link>
+                <Link href="/#anl"><span  className={`spans ${styles.headerLinkWrap}`}>ANALOG<span className={styles.headerLink}></span></span></Link>
+                <Link href="/#prf"><span  className={`spans ${styles.headerLinkWrap}`}>CONTACT<span className={styles.headerLink}></span></span></Link>
             </p>
             <span onClick={() => Clicker()} className={`${styles.spans} ${openMenu ? styles.open : undefined}`}>＋
                 <ul className={`${styles.CloseUL} ${openMenu ? styles.OpenUL : undefined}`}>

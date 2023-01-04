@@ -158,7 +158,7 @@ export default function Home() {
           <div className="wrapper0"></div>
 
 
-          <section className={styles.gdSection} style={{ backgroundSize: '800px' }}>
+          <section id='wd' className={styles.gdSection} style={{ backgroundSize: '800px' }}>
             <div style={{ height: '70px' }}></div>
             <div className="wrapper1">
               <h3 className={styles.wdTitle}>WEB WORKS<span>ウェブデザイン/開発</span></h3>
@@ -193,7 +193,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={styles.gdSection}>
+          <section id='gd' className={styles.gdSection}>
             <div style={{ height: '160px' }}></div>
             <div className="wrapper2">
               <h3 className={styles.wdTitle}>GRAPHIC WORKS<span>ロゴ/キャラクターetc</span></h3>
@@ -213,7 +213,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={styles.prgSection}>
+          <section id='prg' className={styles.prgSection}>
             <div style={{ height: '160px' }}></div>
             <div className="wrapper3">
               <h3 className={styles.wdTitle}>PROGRAMING<span>プログラミング</span></h3>
@@ -231,7 +231,7 @@ export default function Home() {
           </section>
 
 
-          <section className={styles.prgSection}>
+          <section id='anl' className={styles.prgSection}>
 
             <div className="wrapper4">
               <h3 className={styles.wdTitle}>ANALOG<span>アナログ</span></h3>
