@@ -6,6 +6,7 @@ import Header from './Header'
 import Profile from './Profile'
 import Birds from './BirdsPage'
 import Boxes from './Boxespage'
+import Texts from './Textpage'
 
 import Code from './code.json';
 import styles from '../styles/Home.module.css'
@@ -50,6 +51,7 @@ export default function Home() {
 
   const gsapEl = useRef();
   const gsapEl2 = useRef();
+  const gsapEl3 = useRef();
   const mainEl = useRef();
 
   useEffect(() => {
@@ -58,33 +60,68 @@ export default function Home() {
   }, [])
 
   const setAnimation = () => {
-    gsap.fromTo(gsapEl.current,
-      { opacity: 0, y: 20 }, //fromの設定
+
+    const custom_bird = gsap.timeline({
+      toggleActions: 'play none reset reset', //デフォルトの指定
+      scrollTrigger: {
+        trigger: ".wrapper1", //アニメーションが始まるトリガーとなる要素
+        start: "top center"
+      }
+    });
+    
+    custom_bird.fromTo(gsapEl.current,
+      { opacity: 0, }, //fromの設定 //アニメーションする要素
+      { keyframes: [
+        { duration: 16.8, opacity: 1}, //このアニメーションが終わったら下のアニメーションが起こる
+        { duration: 1, opacity: 0 } 
+      ]},
+
+    );
+
+
+    gsap.fromTo(gsapEl2.current,
+      { opacity: 0, y: 140 }, //fromの設定
       {  //toの設定
         opacity: 1,
         y: 0,
-        duration: 2.8,
-        scrollTrigger: {
-          trigger: '.wrapper1',
-          start: 'top center', //要素のトップが、画面の中央まできたら開始
-          end: 'bottom center', //要素のボトムが、画面の中央まできたら終了
-
-        }
+        duration: 1.6,
       });
 
-    gsap.fromTo(gsapEl2.current,
-      { opacity: 1, y: 0 }, //fromの設定
-      {  //toの設定
-        opacity: 0,
-        y: 0,
-        duration: 2.8,
-        scrollTrigger: {
-          trigger: '.wrapper1',
-          start: 'top center', //要素のトップが、画面の中央まできたら開始
-          end: 'bottom center', //要素のボトムが、画面の中央まできたら終了
 
+    const custom_PC = gsap.timeline({toggleActions: 'play none reverse reverse', //デフォルトの指定
+    scrollTrigger: {
+      trigger: ".wrapper1", //アニメーションが始まるトリガーとなる要素
+      start: "top center"
+    }});
+    
+    custom_PC.to(gsapEl2.current,
+      { keyframes: [
+        { duration: 2.8, opacity: 0, y: 200}, //このアニメーションが終わったら下のアニメーションが起こる
+      ]}
+
+    );
+
+
+
+
+
+      const custom_anime = gsap.timeline({
+        toggleActions: 'play none reset reset', //デフォルトの指定
+        scrollTrigger: {
+          trigger: ".wrapper4", //アニメーションが始まるトリガーとなる要素
+          start: "top center"
         }
       });
+      
+      custom_anime.fromTo(gsapEl3.current,
+        { opacity: 0, }, //fromの設定 //アニメーションする要素
+        { keyframes: [
+          { duration: 8.2, opacity: 1}, //このアニメーションが終わったら下のアニメーションが起こる
+          { duration: 1, opacity: 0 } 
+        ]},
+
+      );
+        
 
   }
 
@@ -104,8 +141,11 @@ export default function Home() {
           <div className={styles.imgwrap}>
             <Link href="/"><h1 className={styles.FVTitle}>TOSHIYUKI<span></span>KIMURA<span></span>PORTFOLIO</h1></Link>
             <div ref={gsapEl} style={{ position: 'fixed', zIndex: '2', width: '100%' }}><Birds /></div>
-            <div ref={gsapEl2} style={{ position: 'fixed', zIndex: '1',width: '100%' }}><Boxes /></div>
+            <div ref={gsapEl2} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Boxes /></div>
+            <div ref={gsapEl3} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Texts /></div>
+            <div className="wrapper0">
             <Image src="/SVG/topimg.svg" className={styles.topimg} alt="TOP" layout='fill' objectFit='cover' />
+            </div>
           </div>
 
 
@@ -166,7 +206,7 @@ export default function Home() {
 
           <section className={styles.prgSection}>
             <div style={{ height: '160px' }}></div>
-            <div className="wrapper2">
+            <div className="wrapper3">
               <h3 className={styles.wdTitle}>PROGRAMING<span>プログラミング</span></h3>
             </div>
             <div className={styles.prColm}>
@@ -184,7 +224,7 @@ export default function Home() {
 
           <section className={styles.prgSection}>
 
-            <div className="wrapper2">
+            <div className="wrapper4">
               <h3 className={styles.wdTitle}>ANALOG<span>アナログ</span></h3>
             </div>
             <div className={styles.prColm}>
