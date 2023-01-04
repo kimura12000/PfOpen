@@ -90,7 +90,7 @@ export default function Home() {
 
     const custom_PC = gsap.timeline({toggleActions: 'play none reverse reverse', //デフォルトの指定
     scrollTrigger: {
-      trigger: ".wrapper1", //アニメーションが始まるトリガーとなる要素
+      trigger: ".wrapper0", //アニメーションが始まるトリガーとなる要素
       start: "top center"
     }});
     
@@ -142,11 +142,11 @@ export default function Home() {
             <Link href="/"><h1 className={styles.FVTitle}>TOSHIYUKI<span></span>KIMURA<span></span>PORTFOLIO</h1></Link>
             <div ref={gsapEl} style={{ position: 'fixed', zIndex: '2', width: '100%' }}><Birds /></div>
             <div ref={gsapEl2} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Boxes /></div>
-            <div ref={gsapEl3} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Texts /></div>
-            <div className="wrapper0">
-            <Image src="/SVG/topimg.svg" className={styles.topimg} alt="TOP" layout='fill' objectFit='cover' />
-            </div>
+            <div ref={gsapEl3} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Texts /></div>  
+            <Image src="/SVG/topimg.svg" className={styles.topimg} alt="TOP" layout='fill' objectFit='cover' />     
           </div>
+
+          <div className="wrapper0"></div>
 
 
           <section className={styles.gdSection} style={{ backgroundSize: '800px' }}>
