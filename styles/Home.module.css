@@ -268,7 +268,6 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1400px;
     border-bottom: 1px solid #000;
     height: 648px;
   }
@@ -326,6 +325,11 @@
     font-size: 14px;
     padding: 8px 12px;
     background-color: #ECEAE2;
+  }
+  .wdDescription span {
+    padding: 12px 0 20px 0;
+    display: inline-block;
+    font-weight: 600;
   }
   .wdDescription p:first-of-type {
     height: 140px;
