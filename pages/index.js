@@ -103,8 +103,8 @@ export default function Home() {
         <main>
           <div className={styles.imgwrap}>
             <Link href="/"><h1 className={styles.FVTitle}>TOSHIYUKI<span></span>KIMURA<span></span>PORTFOLIO</h1></Link>
-            <div ref={gsapEl} style={{ position: 'fixed', zIndex: '2' }}><Birds /></div>
-            <div ref={gsapEl2} style={{ position: 'fixed', zIndex: '1' }}><Boxes /></div>
+            <div ref={gsapEl} style={{ position: 'fixed', zIndex: '2', width: '100%' }}><Birds /></div>
+            <div ref={gsapEl2} style={{ position: 'fixed', zIndex: '1',width: '100%' }}><Boxes /></div>
             <Image src="/SVG/topimg.svg" className={styles.topimg} alt="TOP" layout='fill' objectFit='cover' />
           </div>
 
