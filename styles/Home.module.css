@@ -214,6 +214,15 @@
     top: 6%;
     left: 8%;
   }
+  .fvgrdimg {
+    width: 100%;
+    height: auto;
+    opacity: .9;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   
   .title a {
     color: #0070f3;

@@ -130,6 +130,7 @@ export default function Home() {
         <Header />
         <main ref={ThreeDref}>
           <div className={styles.imgwrap}>
+            <img src="/SVG/grd.svg" alt="" className={styles.fvgrdimg} />
             <img src="/SVG/fvmsg.svg" alt="" className={styles.fvmsgimg} />
             <Link href="/">
               <img src="/SVG/fvtitle.svg" alt="" className={styles.fvtimg} />
