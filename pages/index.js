@@ -88,7 +88,7 @@ export default function Home() {
 
 
     const custom_anime = gsap.timeline({
-      toggleActions: 'play none reset reset', //デフォルトの指定
+      toggleActions: 'play none none play', //デフォルトの指定
       scrollTrigger: {
         trigger: ".wrapper4", //アニメーションが始まるトリガーとなる要素
         start: "top center"
@@ -110,29 +110,33 @@ export default function Home() {
 
   const setAnimation2 = () => {
 
-  gsap.fromTo(gsapEl2.current,
-    { opacity: 0, y: 140 }, //fromの設定
-    {  //toの設定
-      opacity: 1,
-      y: 0,
-      duration: 1.6,
+    gsap.fromTo(gsapEl2.current,
+      { opacity: 0, y: 140 }, //fromの設定
+      {  //toの設定
+        opacity: 1,
+        y: 0,
+        duration: 1.6,
+      });
+
+
+    const custom_PC = gsap.timeline({
+      toggleActions: 'play none none none', //デフォルトの指定
+      scrollTrigger: {
+        trigger: ".wrapper0", //アニメーションが始まるトリガーとなる要素
+        start: "top center"
+      }
     });
 
+    custom_PC.to(gsapEl2.current,
+      {
+        keyframes: [
+          { duration: 2.8, opacity: 0, y: 200 }, //このアニメーションが終わったら下のアニメーションが起こる
+        ]
+      }
 
-  const custom_PC = gsap.timeline({toggleActions: 'play none reverse reverse', //デフォルトの指定
-  scrollTrigger: {
-    trigger: ".wrapper0", //アニメーションが始まるトリガーとなる要素
-    start: "top center"
-  }});
-  
-  custom_PC.to(gsapEl2.current,
-    { keyframes: [
-      { duration: 2.8, opacity: 0, y: 200}, //このアニメーションが終わったら下のアニメーションが起こる
-    ]}
 
-  );
-
-  }
+    );
+  };
 
 
 
@@ -148,7 +152,11 @@ export default function Home() {
         <Header />
         <main>
           <div className={styles.imgwrap}>
-            <Link href="/"><h1 className={styles.FVTitle}>TOSHIYUKI<span></span>KIMURA<span></span>PORTFOLIO</h1></Link>
+            <img src="/SVG/fvmsg.svg" alt="" className={styles.fvmsgimg} />
+            <Link href="/">
+              <img src="/SVG/fvtitle.svg" alt="" className={styles.fvtimg} />
+              {/* <h1 className={styles.FVTitle}>TOSHIYUKI<span></span>KIMURA<span></span>PORTFOLIO</h1> */}
+            </Link>
             <div ref={gsapEl} style={{ position: 'fixed', zIndex: '2', width: '100%' }}><Birds /></div>
             <div ref={gsapEl2} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Boxes /></div>
             <div ref={gsapEl3} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Texts /></div>

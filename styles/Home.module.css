@@ -197,6 +197,23 @@
     align-items: center;
     flex-grow: 1;
   }
+
+  .fvtimg {
+    width: 32vw;
+    height: auto;
+    z-index: 4;
+    position: absolute;
+    top: 18%;
+    left: 24%;
+  }
+  .fvmsgimg {
+    width: 8vw;
+    height: auto;
+    z-index: 4;
+    position: absolute;
+    top: 6%;
+    left: 8%;
+  }
   
   .title a {
     color: #0070f3;
