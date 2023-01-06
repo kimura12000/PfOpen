@@ -52,8 +52,8 @@ export default function Home() {
   const [main, setMain] = useState()
   const ThreeDref = useRef()
   useEffect(() => {
-    setMain(ThreeDref.current.children[2])
-    console.log(ThreeDref.current.children[2])
+    setMain(ThreeDref.current.children[0])
+    console.log(ThreeDref.current.children[0])
   }, [main])
 
 

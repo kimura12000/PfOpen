@@ -30,7 +30,7 @@ const BoxesPage =  React.memo(({ mainRef }) => {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: mainRef,
-          start: 'top center',
+          start: 'center center',
           end: 'bottom center',
           scrub: true,
           markers: false
@@ -53,7 +53,7 @@ const BoxesPage =  React.memo(({ mainRef }) => {
     const tl2 = gsap.timeline({
       scrollTrigger: {
         trigger: mainRef,
-        start: 'top center',
+        start: 'center center',
         end: 'bottom center',
         scrub: true,
         markers: false

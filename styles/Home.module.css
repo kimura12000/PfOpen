@@ -217,7 +217,7 @@
   .fvgrdimg {
     width: 100%;
     height: auto;
-    opacity: .9;
+    opacity: .94;
     z-index: 1;
     position: absolute;
     top: 0;
@@ -566,7 +566,7 @@
   }
   
   .grGrid {
-    height: 374px;
+    height: auto;
     background: #FFCC00;
     width: 100%;
     display: grid;
@@ -580,7 +580,7 @@
     border-right: 1px solid #999;
   }
   .grGrid .grImg .grImgInner {
-    height: 352px;
+    height: auto;
     overflow: hidden;
   }
   .grGrid .grDescript {
@@ -613,7 +613,7 @@
   }
   .grGrid div img{
     width: 100%;
-    min-height: 374px;
+    min-height: auto;
     max-width: ;
     opacity: .94;
     transition: opacity .2s;
