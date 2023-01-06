@@ -235,7 +235,13 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="wrapper5" style={{ height: '820px' }}></div>
+          <div className="wrapper5" style={{ height: '1220px' }}>
+            <p style={{height: '400px', display:'flex', justifyContent:'center', alignItems:'flex-end',lineHeight:'36px', letterSpacing:'0.1em', fontSize:'24px' }}>バウンダリ（境界）を超えてデザインする</p>
+            <p style={{height: '700px', display:'flex', justifyContent:'center', alignItems:'flex-start',lineHeight:'36px', letterSpacing:'0.1em' }}>デザインとコーディング　フロントエンドとバックエンド　クリエイティブとマーケティング　先端と古典<br/>
+              会社と会社　業界と業界　人と人　都会と地方　デジタルとアナログ　老若男女　東西南北　価値観の違い<br/>
+              複雑で多様な社会が存在し、そして、その間には様々な壁があります。<br/>
+              あらゆるジャンル・あらゆるボーダーライン、専門性、領域、”それらを超えて届く何か”を</p>
+          </div>
 
           <Profile />
 
