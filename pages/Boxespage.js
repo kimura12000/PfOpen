@@ -213,7 +213,7 @@ const BoxesPage =  React.memo(({ mainRef }) => {
 
 return (
   <>
-  <div style={{position:'absolute',zIndex:'6'}}>
+  <div style={{position:'absolute',zIndex:'6',width:'100%'}}>
   <Canvas camera={{ position: [0, 0, 35] }} alfa={true} transparent>
       <ambientLight intensity={2} />
       <pointLight position={[40, 40, 40]} />
@@ -222,7 +222,7 @@ return (
       <OrbitControls />
     </Canvas>
   </div>
-  <div ref={gsapBird} style={{position:'absolute',zIndex:'5'}}>
+  <div ref={gsapBird} style={{position:'absolute',zIndex:'5',width:'100%'}}>
     <Canvas camera={{ position: [0, 0, 35] }} alfa={true} transparent>
       <ambientLight intensity={2} />
       <pointLight position={[40, 40, 40]} />

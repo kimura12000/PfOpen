@@ -580,7 +580,8 @@
     border-right: 1px solid #999;
   }
   .grGrid .grImg .grImgInner {
-    height: auto;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
   }
   .grGrid .grDescript {
