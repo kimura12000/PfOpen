@@ -72,26 +72,6 @@ export default function Home() {
 
   const setAnimation = () => {
 
-    // const custom_bird = gsap.timeline({
-    //   toggleActions: 'play none reset reset', //デフォルトの指定
-    //   scrollTrigger: {
-    //     trigger: ".wrapper2", //アニメーションが始まるトリガーとなる要素
-    //     start: "top center"
-    //   }
-    // });
-
-    // custom_bird.fromTo(gsapEl.current,
-    //   { opacity: 0, }, //fromの設定 //アニメーションする要素
-    //   {
-    //     keyframes: [
-    //       { duration: 16.8, opacity: 1 }, //このアニメーションが終わったら下のアニメーションが起こる
-    //       { duration: 1, opacity: 0 }
-    //     ]
-    //   },
-
-    // );
-
-
 
     const custom_anime = gsap.timeline({
       toggleActions: 'play none none play', //デフォルトの指定
@@ -105,7 +85,7 @@ export default function Home() {
       { opacity: 0, }, //fromの設定 //アニメーションする要素
       {
         keyframes: [
-          { duration: 8.2, opacity: 1 }, //このアニメーションが終わったら下のアニメーションが起こる
+          { duration: 9.2, opacity: 1 }, //このアニメーションが終わったら下のアニメーションが起こる
           { duration: 1, opacity: 0 }
         ]
       },

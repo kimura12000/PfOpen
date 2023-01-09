@@ -22,7 +22,10 @@ const Model2 = (props) => {
     return (
       <primitive object={nodes.scene} ref={group} scale={[props.props.x, props.props.y, props.props.z]}
       position={[16, -10, -4.5]}
-      rotation={[0.1, -0.4, 0]}/>
+      rotation={[0.1, -0.4, 0]}
+      opacity={0.1}
+      transparent
+      />
     )
   }
 

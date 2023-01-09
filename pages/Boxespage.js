@@ -19,7 +19,6 @@ const BoxesPage =  React.memo(({ mainRef }) => {
     x: 1,
     y: 1,
     z: 1,
-    opacity: 1,
   }
 
   const birds = useMemo(
@@ -74,16 +73,26 @@ const BoxesPage =  React.memo(({ mainRef }) => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: mainRef,
-          start: 'center center',
-          end: 'bottom center',
+          start: 'top center',
+          end: 'center center',
           scrub: true,
           markers: false
         }
       })
       tl.to(modelable, {
-        x: 0.18,
-        y: 0.18,
-        z: 0.18
+        x: 0.6,
+        y: 0.6,
+        z: 0.6
+      })
+      tl.to(modelable, {
+        x: 0,
+        y: 0,
+        z: 0
+      })
+      tl.to(modelable, {
+        x: 0,
+        y: 0,
+        z: 0
       })
       tl.to(modelable, {
         x: 0,
@@ -98,16 +107,21 @@ const BoxesPage =  React.memo(({ mainRef }) => {
     const tl2 = gsap.timeline({
       scrollTrigger: {
         trigger: mainRef,
-        start: 'center center',
-        end: 'bottom center',
+        start: 'top center',
+        end: 'center center',
         scrub: true,
         markers: false
       }
     })
     tl2.to(boxable, {
-      x: 0.18,
-      y: 0.18,
-      z: 0.18
+      x: 2.9,
+      y: 2.9,
+      z: 2.9
+    })
+    tl2.to(boxable, {
+      x: 0,
+      y: 0,
+      z: 0
     })
     tl2.to(boxable, {
       x: 0,
@@ -125,45 +139,101 @@ const BoxesPage =  React.memo(({ mainRef }) => {
     const tl3 = gsap.timeline({
       scrollTrigger: {
         trigger: mainRef,
-        start: 'center center',
+        start: 'top center',
         end: 'bottom center',
         scrub: true,
         markers: false
       }
     })
     tl3.to(birdable, {
-      x: 1.3,
-      y: 1.3,
-      z: 1.3,
-      opacity: 0,
+      x: 1,
+      y: 1,
+      z: 1,
     })
     tl3.to(birdable, {
-      x: 0,
-      y: 0,
-      z: 0,
-      opacity: 0,
+      x: 1.2,
+      y: 1.2,
+      z: 1.2,
     })
 
   }
 
 }, [mainRef])
 
+  // const gsapEl = useRef();
+
+  const gsapBird = useRef();
+
+  useEffect(() => {
+    setBirdAnimation()
+
+  }, [mainRef])
+
+
+  const setBirdAnimation = () => {
+    if (mainRef) {
+      const tl4 = gsap.timeline({
+        scrollTrigger: {
+          trigger: mainRef,
+          start: 'center center',
+          end: 'bottom center',
+          scrub: true,
+          markers: false
+        }
+      })
+      tl4.from(gsapBird.current, {
+        opacity: 0,
+      })
+      tl4.to(gsapBird.current, {
+        opacity: 1,
+      })
+      tl4.to(gsapBird.current, {
+        opacity: 1,
+      })
+      tl4.to(gsapBird.current, {
+        opacity: 1,
+      })
+      tl4.to(gsapBird.current, {
+        opacity: 1,
+      })
+      tl4.to(gsapBird.current, {
+        opacity: 1,
+      })
+      tl4.to(gsapBird.current, {
+        opacity: 1,
+      })
+      tl4.to(gsapBird.current, {
+        opacity: 1,
+      })
+  
+    }
+  }
+
 
 
 return (
   <>
-    <Canvas camera={{ position: [0, 0, 35] }}>
+  <div style={{position:'absolute',zIndex:'6'}}>
+  <Canvas camera={{ position: [0, 0, 35] }} alfa={true} transparent>
       <ambientLight intensity={2} />
       <pointLight position={[40, 40, 40]} />
       <Box props={boxable} />
-      <ModelComponent props={modelable} />
+      <ModelComponent props={modelable}/>
+      <OrbitControls />
+    </Canvas>
+  </div>
+  <div ref={gsapBird} style={{position:'absolute',zIndex:'5'}}>
+    <Canvas camera={{ position: [0, 0, 35] }} alfa={true} transparent>
+      <ambientLight intensity={2} />
+      <pointLight position={[40, 40, 40]} />
       <Suspense fallback={null}>
         {birds.map((props) => (
-          <ModelComponent2 {...props} key={props.key} props={birdable} />
+          <ModelComponent2 {...props} key={props.key} props={birdable}/>
         ))}
       </Suspense>
       <OrbitControls />
     </Canvas>
+  </div>
   </>
 )
 })

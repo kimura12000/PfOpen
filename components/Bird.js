@@ -34,10 +34,12 @@ export default function Bird({ speed, factor, url, birdable, ...props }) {
           rotation={[1.5707964611537577, 0, 0]}
           scale={[props.props.x, props.props.y, props.props.z]}
           opacity={props.props.opacity}
+          transparent
         >
           <bufferGeometry attach="geometry" {...nodes.Object_0.geometry}/>
           <meshStandardMaterial
             attach="material"
+            transparent
             opacity={props.props.opacity}
             {...nodes.Object_0.material}
             name="Material_0_COLOR_0"
