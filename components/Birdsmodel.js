@@ -1,10 +1,7 @@
-import { Suspense, useMemo } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
-import Bird from '../components/Bird'
+import React, { useState, useRef, useEffect, lazy, Suspense, useMemo } from "react"
 
-export default function BirdsPage() {
-  const birds = useMemo(
+
+const birdsmodel = useMemo(
     () =>
       new Array(10).fill().map((_, index) => {
         const x =
@@ -21,29 +18,19 @@ export default function BirdsPage() {
             : bird === 'flamingo'
             ? 0.25 + Math.random()
             : 1 + Math.random() - 0.5
-
+  
         return {
           key: index,
           position: [x, y, z],
           rotation: [0, x > 0 ? Math.PI : 0, 0],
           speed,
           factor,
+          birdable,
           url: `/glb/${bird}.glb`,
         }
       }),
     []
   )
 
-  return (
-    <Canvas camera={{ position: [0, 0, 35] }}>
-      <ambientLight intensity={2} />
-      <pointLight position={[40, 40, 40]} />
 
-      <Suspense fallback={null}>
-        {birds.map((props) => (
-          <Bird {...props} key={props.key} />
-        ))}
-      </Suspense>
-    </Canvas>
-  )
-}
+  export default birdsmodel;

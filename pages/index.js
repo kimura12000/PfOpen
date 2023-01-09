@@ -4,7 +4,6 @@ import Link from 'next/link'
 import React, { useState, useRef, useEffect } from "react"
 import Header from './Header'
 import Profile from './Profile'
-import Birds from './BirdsPage'
 import Boxes from './Boxespage'
 import Texts from './Textpage'
 
@@ -52,7 +51,7 @@ export default function Home() {
   const [main, setMain] = useState()
   const ThreeDref = useRef()
   useEffect(() => {
-    setMain(ThreeDref.current.children[0])
+    setMain(ThreeDref.current)
     console.log(ThreeDref.current.children[0])
   }, [main])
 
@@ -61,7 +60,7 @@ export default function Home() {
 
   const div = useRef();
 
-  const gsapEl = useRef();
+  // const gsapEl = useRef();
 
   const gsapEl3 = useRef();
 
@@ -73,24 +72,24 @@ export default function Home() {
 
   const setAnimation = () => {
 
-    const custom_bird = gsap.timeline({
-      toggleActions: 'play none reset reset', //デフォルトの指定
-      scrollTrigger: {
-        trigger: ".wrapper2", //アニメーションが始まるトリガーとなる要素
-        start: "top center"
-      }
-    });
+    // const custom_bird = gsap.timeline({
+    //   toggleActions: 'play none reset reset', //デフォルトの指定
+    //   scrollTrigger: {
+    //     trigger: ".wrapper2", //アニメーションが始まるトリガーとなる要素
+    //     start: "top center"
+    //   }
+    // });
 
-    custom_bird.fromTo(gsapEl.current,
-      { opacity: 0, }, //fromの設定 //アニメーションする要素
-      {
-        keyframes: [
-          { duration: 16.8, opacity: 1 }, //このアニメーションが終わったら下のアニメーションが起こる
-          { duration: 1, opacity: 0 }
-        ]
-      },
+    // custom_bird.fromTo(gsapEl.current,
+    //   { opacity: 0, }, //fromの設定 //アニメーションする要素
+    //   {
+    //     keyframes: [
+    //       { duration: 16.8, opacity: 1 }, //このアニメーションが終わったら下のアニメーションが起こる
+    //       { duration: 1, opacity: 0 }
+    //     ]
+    //   },
 
-    );
+    // );
 
 
 
@@ -136,8 +135,8 @@ export default function Home() {
               <img src="/SVG/fvtitle.svg" alt="" className={styles.fvtimg} />
               {/* <h1 className={styles.FVTitle}>TOSHIYUKI<span></span>KIMURA<span></span>PORTFOLIO</h1> */}
             </Link>
-            <div ref={gsapEl} style={{ position: 'fixed', zIndex: '2', width: '100%' }}><Birds /></div>
-            <div style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Boxes mainRef={main} /></div>
+            <div style={{ position: 'fixed', zIndex: '2', width: '100%', height: '100vh' }}></div>
+            <div style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Boxes mainRef={main}/></div>
             <div ref={gsapEl3} style={{ position: 'fixed', zIndex: '1', width: '100%' }}><Texts /></div>
             <Image src="/SVG/topimg.svg" className={styles.topimg} alt="TOP" layout='fill' objectFit='cover' />
           </div>
