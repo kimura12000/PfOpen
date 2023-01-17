@@ -149,12 +149,15 @@
     padding-right: 18px;
     color: rgba(60,60,60,1);
     list-style: none;
+    font-family: greycliff-cf, sans-serif;
+font-weight: 700;
+font-style: normal;
   }
   .CloseUL li{
     padding: 16px 0;
     opacity: 0;
     transition: .2s ease;
-    font-size: 24px;
+    font-size: 32px;
     letter-spacing: 0.1em;
   }
   
@@ -171,7 +174,7 @@
     padding: 16px 0;
     opacity: 1;
     transition: .2s ease;
-    font-size: 24px;
+    font-size: 32px;
     letter-spacing: 0.1em;
   }
 
@@ -262,12 +265,15 @@
   }
   
   .wdTitle {
-    font-size: 24px;
+    font-size: 38px;
     height: 240px;
     padding-top: 100px;
     padding-left: 80px;
     letter-spacing: 0.1em;
     text-align: center;
+    font-family: greycliff-cf, sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
   
   .wdTitle span{

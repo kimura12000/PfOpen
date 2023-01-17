@@ -4,6 +4,7 @@
             "display": "Q.ENEST ホールディングス",
             "image": "images/sshot_01.jpeg",
             "path": "/webdesign#qenest",
+            "url": "https://www.q-enest.com/",
             "id": "qenest",
             "year": "2022",
             "descript": "Coding",
@@ -17,6 +18,7 @@
             "display": "Qcells Brandsite",
             "image": "images/qcells.jpg",
             "path": "/webdesign#qcells",
+            "url": "https://www.q-cells.jp/",
             "id": "qcells",
             "year": "2022",
             "descript": "Direction/Design/Coding",
@@ -30,6 +32,7 @@
             "display": "Q.SUPREME 製品ページ",
             "image": "images/qsupreme.jpg",
             "path": "/webdesign#qsupreme",
+            "url": "https://www.q-cells.jp/qsupreme",
             "id": "qsupreme",
             "year": "2022",
             "descript": "Design/Coding"
@@ -38,6 +41,7 @@
             "display": "NetChina Brandsite",
             "image": "images/netchina.jpg",
             "path": "/webdesign#netchina",
+            "url": "https://drive.google.com/file/d/1lyWuhA_GzVDOodKx9F_Lgzxe7SOyQRWL/view?usp=sharing",
             "id": "netchina",
             "year": "2022",
             "descript": "Direction/Design/Coding"
@@ -62,6 +66,7 @@
             "display": "ソーラーメイト Brandsite",
             "image": "images/nowbuild.png",
             "path": "/webdesign#solarmate",
+            "url": "https://solar-mate.jp/",
             "id": "solarmate",
             "year": "2022",
             "descript": "Design/Coding"
@@ -78,6 +83,7 @@
             "display": "0円ソーラー比較ナビ",
             "image": "images/hikaku.jpg",
             "path": "/webdesign#hikaku",
+            "url": "https://www.energy-hikaku.com/",
             "id": "hikaku",
             "year": "2022",
             "descript": "Direction/Design/Coding"
@@ -102,6 +108,7 @@
             "display": "Portfolio 2021",
             "image": "images/2021prtf.jpg",
             "path": "/webdesign#2021",
+            "url": "",
             "id": "2021",
             "year": "2021",
             "descript": "Direction/Design/Coding"
@@ -110,6 +117,7 @@
             "display": "神田 下久呉服店",
             "image": "images/shimokyuu.jpg",
             "path": "/webdesign#shimokyuu",
+            "url": "https://www.shimokyuu-kimono.com/",
             "id": "shimokyuu",
             "year": "2018",
             "descript": "Direction/Design/Coding"

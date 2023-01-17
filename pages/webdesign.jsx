@@ -18,7 +18,7 @@ export default function Webdesign() {
     let ArrImage2 = [];
     const WdData = Code.wd;
     const WDD = WdData.map((item) =>
-      Arr2 = [...Arr1 ,<div id={item.id}><p>{item.display}<span>{item.year}</span></p><p>{item.descript}</p></div> ,<figure><img src={item.image} alt="" /></figure>]
+      Arr2 = [...Arr1 ,<div id={item.id}><p>{item.display}<span>{item.year}</span></p><p>{item.descript}</p></div> ,<figure><a href={item.url} target="_blank" ><img src={item.image} alt="" /></a></figure>]
       )
       console.log(WDD);
      
