@@ -1,13 +1,13 @@
 {
     "wd":[
         {
-            "display": "Q.ENEST ホールディングス",
+            "display": "A社 電力事業HD",
             "image": "images/sshot_01.jpeg",
             "path": "/webdesign#qenest",
             "url": "https://www.q-enest.com/",
             "id": "qenest",
             "year": "2022",
-            "descript": "Coding",
+            "descript": "Design/Coding",
             "bodyimage1": "images/qenest-body1.jpg",
             "bodyimage2": "images/qenest-body2.jpg",
             "bodyimage3": "images/qenest-body3.jpg",
@@ -15,7 +15,7 @@
             "bodyimageSP2": "images/qenest-SPbody2.jpg"
         },
         {
-            "display": "Qcells Brandsite",
+            "display": "A社 太陽光パネルメーカーサイトリニューアル",
             "image": "images/qcells.jpg",
             "path": "/webdesign#qcells",
             "url": "https://www.q-cells.jp/",
@@ -29,7 +29,7 @@
             "bodyimageSP2": "images/qcells-SPbody2.jpg"
         },
         {
-            "display": "Q.SUPREME 製品ページ",
+            "display": "A社 太陽光パネル製品ページリニューアル",
             "image": "images/qsupreme.jpg",
             "path": "/webdesign#qsupreme",
             "url": "https://www.q-cells.jp/qsupreme",
@@ -38,7 +38,7 @@
             "descript": "Design/Coding"
         },
         {
-            "display": "NetChina Brandsite",
+            "display": "B社 Brandsite",
             "image": "images/netchina.jpg",
             "path": "/webdesign#netchina",
             "url": "https://drive.google.com/file/d/1lyWuhA_GzVDOodKx9F_Lgzxe7SOyQRWL/view?usp=sharing",
@@ -47,7 +47,7 @@
             "descript": "Direction/Design/Coding"
         },
         {
-            "display": "NetChina UI/UX Design",
+            "display": "B社 UI/UX Design",
             "image": "images/netchinaUI.jpg",
             "path": "/webdesign#netchinaUI",
             "id": "netchinaUI",
@@ -55,7 +55,7 @@
             "descript": "UI・UX Design/Coding"
         },
         {
-            "display": "PrimeChinese Brandsite",
+            "display": "B社 法人向け Brandsite",
             "image": "images/nowbuild.png",
             "path": "/webdesign#smPrice",
             "id": "smPrice",
@@ -63,7 +63,7 @@
             "descript": "Direction/Design/Coding"
         },
         {
-            "display": "ソーラーメイト Brandsite",
+            "display": "A社 PPA事業 Brandsite",
             "image": "images/nowbuild.png",
             "path": "/webdesign#solarmate",
             "url": "https://solar-mate.jp/",
@@ -72,7 +72,7 @@
             "descript": "Design/Coding"
         },
         {
-            "display": "Q.ENESTでんき 節電キャンペーンLP",
+            "display": "A社 節電キャンペーンLP",
             "image": "images/denkiLP.jpg",
             "path": "/webdesign#denkiLP",
             "id": "denkiLP",
@@ -80,7 +80,7 @@
             "descript": "Design/Coding"
         },
         {
-            "display": "0円ソーラー比較ナビ",
+            "display": "A社 新規サイト構築",
             "image": "images/hikaku.jpg",
             "path": "/webdesign#hikaku",
             "url": "https://www.energy-hikaku.com/",
@@ -89,7 +89,7 @@
             "descript": "Direction/Design/Coding"
         },
         {
-            "display": "JAC Recruitment 転職市場動向",
+            "display": "C社 転職市場動向",
             "image": "images/JAC.jpg",
             "path": "/webdesign#jac",
             "id": "jac",
@@ -97,7 +97,7 @@
             "descript": "一部PageDesign/Coding"
         },
         {
-            "display": "須田町北部町会WEBSITE",
+            "display": "D自治体 WEBSITE",
             "image": "images/sudakita.jpg",
             "path": "/webdesign#sudakita",
             "id": "sudakita",
@@ -114,7 +114,7 @@
             "descript": "Direction/Design/Coding"
         },
         {
-            "display": "神田 下久呉服店",
+            "display": "E社ウェブサイト構築",
             "image": "images/shimokyuu.jpg",
             "path": "/webdesign#shimokyuu",
             "url": "https://www.shimokyuu-kimono.com/",
@@ -123,7 +123,7 @@
             "descript": "Direction/Design/Coding"
         },
         {
-            "display": "東京呉服専門店協同組合",
+            "display": "F組合ウェブサイト構築",
             "image": "images/gomeikai.jpg",
             "path": "/webdesign#gomeikai",
             "id": "gomeikai",
@@ -133,29 +133,29 @@
     ],
     "gd":[
         {
-            "display": "Wateras illumination",
+            "display": "Illuminationデザイン",
             "image": "images/wateras.jpg",
             "path": "/webdesign#qenest",
             "id": "qenest",
             "year": "2017",
-            "descript": "安田不動産ワテラス・ウィンターイルミネーションのデザイン",
+            "descript": "大手不動産会社ウィンターイルミネーションのデザイン",
             "bodyimage1": "images/qenest-body1.jpg",
             "bodyimage2": "images/qenest-body2.jpg",
             "bodyimage3": "images/qenest-body3.jpg"
         },
         {
-            "display": "SolarMate CharactorDesign",
+            "display": "A社 PPA事業 CharactorDesign",
             "image": "images/sorakame.png",
             "path": "/webdesign#qenest",
             "id": "qenest",
             "year": "2022",
-            "descript": "ソーラーメイトSNS・動画等に使用したキャラクターのデザイン",
+            "descript": "SNS・動画等に使用したキャラクターのデザイン",
             "bodyimage1": "images/qenest-body1.jpg",
             "bodyimage2": "images/qenest-body2.jpg",
             "bodyimage3": "images/qenest-body3.jpg"
         },
         {
-            "display": "SolarMate Blender3Dmodeling",
+            "display": "A社 Blender3Dmodeling",
             "image": "images/smhouse.jpg",
             "path": "/webdesign#qenest",
             "id": "qenest",
@@ -166,12 +166,12 @@
             "bodyimage3": "images/qenest-body3.jpg"
         },
         {
-            "display": "NetChina LogoDesign",
+            "display": "B社サービス LogoDesign",
             "image": "images/netchinalogo.jpg",
             "path": "/webdesign#qenest",
             "id": "qenest",
             "year": "2022",
-            "descript": "オンライン中国語スクール「ネットチャイナ」ロゴデザイン",
+            "descript": "オンライン中国語スクールロゴデザイン",
             "bodyimage1": "images/qenest-body1.jpg",
             "bodyimage2": "images/qenest-body2.jpg",
             "bodyimage3": "images/qenest-body3.jpg"
