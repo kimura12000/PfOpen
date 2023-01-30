@@ -33,7 +33,7 @@ export default function Webdesign() {
 
       <Header/>
       <div className={styles.WDimgwrap}>
-      <h1 className={styles.FVTitle}>TOSHIYUKI<span></span>KIMURA<span></span>PORTFOLIO</h1>
+      <h1 className={styles.FVTitle}>T<span></span>K<span></span>PORTFOLIO</h1>
         <p className={styles.abtitle}>WEB DESIGN UI/UX DESIGN</p>
       </div>
 
