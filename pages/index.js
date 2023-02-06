@@ -185,7 +185,7 @@ export default function Home() {
             <div className="wrapper3">
               <h3 className={styles.wdTitle}>PROGRAMING<span>プログラミング</span></h3>
             </div>
-            <div className={styles.prColm}>
+            <div className={`${styles.prColm} ${styles.scrollBar}`}>
               <div>
                 <p>Dialogflow Chatbot</p>
                 <p>GoogleSpreadSheet Api</p>
@@ -203,7 +203,7 @@ export default function Home() {
             <div className="wrapper4">
               <h3 className={styles.wdTitle}>ANALOG<span>アナログ</span></h3>
             </div>
-            <div className={styles.prColm}>
+            <div className={`${styles.prColm} ${styles.scrollBar}`}>
               <div>
                 <p>TENUGUI1</p>
                 <p>TENUGUI2</p>
